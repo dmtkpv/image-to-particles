@@ -24,7 +24,7 @@ function createParticles (options) {
     const { canvas, ...config } =  Object.assign(defaults, options);
     const parent = canvas.parentNode;
 
-    const WIDTH = 718;
+    const WIDTH = config.image.naturalWidth;
     const HEIGHT = config.image.naturalHeight;
 
     const ctx = canvas.getContext('2d');
@@ -197,6 +197,7 @@ function createParticles (options) {
                     const point = {
                         x0: gx + config.grid / 2,
                         y0: gy + config.grid / 2,
+                        a: 0,
                         x: Math.random() * WIDTH,
                         y: Math.random() * HEIGHT,
                         tx: 0,
