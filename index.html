@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="/particles.js"></script>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            height: 100%;
+        }
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="demo"></canvas>
+    <script>
+        const canvas = document.getElementById('demo')
+        const image = new Image();
+        image.src = '/shape.png'
+        image.onload = () => createParticles({ canvas, image })
+    </script>
+</body>
+</html>
