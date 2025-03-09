@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "scripts": {
+    "serve": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^6.2.1"
+  },
+  "dependencies": {
+    "gsap": "^3.12.7"
+  }
+}
